@@ -1,0 +1,74 @@
+.calendar-container {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.calendar-container__component {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-container__component-months {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar-display {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.calendar-display-header {
+    border-radius: 10px;
+
+}
+
+.calendar-display__component {
+    min-width: 100px;
+    color: darkslategrey;
+    font-size: 20px;
+    paddin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.calendar-day-info {
+    justify-content: normal;
+    border: 1px solid black;
+    padding: 5px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.calendar-day-info-day {
+    margin: 0;
+}
+
+.calendar-day-info-events {
+    display: flex;
+    align-items: baseline;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-day-info-events__component:nth-child(2) {
+    margin-left: 10px;
+}
